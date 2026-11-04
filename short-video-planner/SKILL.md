@@ -26,7 +26,7 @@ grouped and numbered. Don't ask again for anything you can reasonably infer; sta
 
 1. Topic or product (what it is, in one sentence)
 2. Audience, and the outcome you want (sign-ups, sales, follows, awareness, clicks)
-3. Platform, format (product launch / talking head / B-roll / text over video / silhouette / unsure) and length (15, 30 or 60 s)
+3. Platform, format (product launch or feature demo / talking head / B-roll / text over video / silhouette / repackage of an existing video / unsure) and length (15, 30 or 60 s)
 4. Tone and the one main message
 5. Resources: existing footage, equipment (phone? lights? mic?), locations, people on camera, editing skill, production time
 6. Facts and proof you can use (features, numbers, quotes, demos), and the call to action
@@ -92,36 +92,52 @@ unless the user says otherwise. Keep text out of the bottom ~20% and right edge 
 
 ## Hook bank (choose different types for the three concepts)
 
-- **Contrast reset:** a sudden shift in brightness, colour or scale in the first 0.5 s, then the message. *(Seen in source 1.)*
+- **Contrast reset:** a sudden shift in brightness, colour or scale in the first 0.5 s, then the message. *(P2: sources 1, 4)*
+- **In-world question:** a notification, text or comment *inside the scene* asks the question, so it doesn't read as an ad. *(source 2)*
+- **Viewing instruction:** tell viewers how to watch ("sound on", "watch the left side"). Best for sound- or detail-led pieces. *(source 3)*
 - **Specific situation:** name the exact moment the viewer is in ("You screenshot an outfit and…").
 - **Result first:** show the end state, then rewind to how.
-- **Live input:** open on someone typing, tapping or doing the action. *(Seen in source 1 as the demo.)*
+- **Live input:** open on someone typing, tapping or doing the action. *(P3: sources 1, 2, 4, used there as the demo)*
 - **Wrong-way / right-way:** a quick before/after.
 - **Bold claim** (only if the user has proof for it).
-- **Question:** must be specific; generic questions are weak (see source 1 critique).
+- **Direct question:** must name a specific situation. The sources' generic "Need …?" openers were their weakest element (P1).
 
 ## Format playbooks
 
-### Product launch: evidence-based (source 1)
-Methods observed in the analysed video, generalised:
-1. **The hook resets attention visually**, then poses the problem in the viewer's terms.
-2. **Show the problem space visually** (a cloud of options, a messy state) instead of explaining it.
-3. **Demo through the input:** show the real action (typing a request, tapping, scanning) in real
-   time. The cursor or hand is the protagonist.
-4. **Make the key action a moment:** push in on the button and click with a sound cue.
-5. **The payoff carries concrete detail** (real names, prices, outputs), but it must be legible: hold
-   it long enough and size it for phones.
-6. **Benefit lines can morph** from one to the next to save time; keep in-between states very brief.
-7. **Name after value:** reveal the product name once the benefit is understood.
-8. **Use one small transition set** (e.g. blur + zoom) throughout for coherence.
-9. **Cut on the music:** place transitions on drops or hits in the track.
-10. **Bookend** the open and close styling so the video loops cleanly.
-11. **Fix the source's gaps:** add an explicit CTA, make the hook specific, deliver vertical, and
-    tie the result visibly back to the input.
+### Product launch / feature demo: evidence-based (sources 1–4)
+Pattern IDs (P1–P11) refer to `references/source-analysis.md`.
 
-*Limits:* the polished motion-graphic version needs motion-design skill and UI mockups. It doesn't need an
-audience or brand recognition. Low-resource route: screen-record the real product, add cursor
-zoom-ins and kinetic captions in a free editor. Never mock up features that don't exist.
+Default beat structure seen across the sources:
+**question → input → action → outcome → (name) → signature/CTA**
+
+1. **The hook resets attention visually** (P2), then poses the problem. Make the wording *specific* (P1).
+2. **Show the problem space visually** (a cloud of options, a messy state) instead of explaining it.
+3. **Demo through the input** (P3): show the real action (a typed request, tap or scan) in real
+   time. Phrase the input as a sentence the viewer would actually say.
+4. **Make the key action a moment** (P4): push in on the button, with a click/ripple and a sound cue.
+5. **Morph between elements** instead of cutting (P5). Low-resource version: zoom-ins and whip pans.
+6. **Show a concrete, human outcome** (P6): real names, prices, a friend's reply. It must be legible:
+   hold it long enough and size it for phones. Illustrative data must look illustrative.
+7. **Name after value:** reveal the product name once the benefit is understood.
+8. **Use one small transition set** (e.g. blur + zoom + spin) throughout.
+9. **Cut on the music:** place transitions on drops or hits in the track.
+10. **Loop or repeat:** bookend the open and close styling. If a short demo has small detail,
+    show it twice (P9).
+11. **Fix the sources' consistent gaps:** add one explicit CTA (none of the 4 had one), keep UI text
+    phone-legible (a problem in all 4), deliver 9:16/4:5 for feeds, and tie the outcome visibly back to the input.
+12. **A signature end card is optional** (P7): good for building a series, but put the CTA before it or on it.
+
+*Limits:* the polished motion-graphic version needs motion-design skill and UI mock-ups. It doesn't need an
+audience or brand recognition, **except concept redesigns of other companies' products (P11)**,
+which borrow that brand's attention and carry trademark/confusion risk. Label them clearly as concepts.
+Low-resource route: screen-record the real product, add cursor zoom-ins and kinetic captions in a free
+editor. Never mock up features that don't exist and present them as real.
+
+### Repackaging / behind-the-scenes cut: evidence-based (source 3)
+When the user already has a finished video, offer a second post rather than a new shoot:
+new aspect ratio + new caption/hook + one piece of real process proof (an edit timeline, sketches, raw
+footage), arranged as a stacked vertical layout. Use it to show craft to peers and clients. Limit: it repeats
+content for existing followers, so space the posts apart and change the hook. Never fake process material.
 
 ### Talking head: general craft (no source examples yet)
 Open mid-thought on the hook line; one idea per sentence; cut out breaths and false starts (jump cuts
@@ -134,8 +150,9 @@ Plan shots as wide → medium → detail per beat. Move with purpose (slow push-
 Match cuts on motion or shape. Voiceover is written first, and picture is cut to the VO, with the music under the VO by about 12–18 dB.
 Shoot each shot 5–8 s for edit handles. Settings: shutter about double the frame rate, *starting point — test it*.
 
-### Text over video: general craft plus source 1's typography lessons
-Opening line of 3–6 words that names the viewer's situation. Break lines on meaning, not width.
+### Text over video: general craft plus the sources' typography lessons
+Opening line of 3–6 words that names the viewer's situation. Build it word by word, and annotate
+the key word with a highlight, underline or scribble (sources 1, 4). Break lines on meaning, not width.
 Respect the reading budget above. Calm, low-detail background footage, or a dark/light scrim for
 contrast. For looping, make the last frame lead visually into the first.
 
