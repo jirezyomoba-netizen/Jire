@@ -196,7 +196,7 @@ export const PromptScene: React.FC<{
       )}
       {result && res > 0 && (
         <div style={{position: 'absolute', left: W / 2 - 240, top: barY + 190, transform: `scale(${0.6 + 0.4 * res})`, opacity: res, transformOrigin: 'top center'}}>
-          <ClipCard id={result.clip} w={480} h={600} traceAt={s(result.at)} />
+          <ClipCard id={result.clip} w={480} h={600} traceAt={s(result.at)} appearAt={s(result.at)} />
         </div>
       )}
     </Light>
@@ -284,16 +284,16 @@ export const FixLook: React.FC = () => {
       {bc > 0 && (
         <>
           <div style={{position: 'absolute', left: lerp(-400, 30, bc), top: 900, opacity: bc}}>
-            <ClipCard id="B" w={300} h={375} />
+            <ClipCard id="B" w={300} h={375} appearAt={s(6)} />
           </div>
           <div style={{position: 'absolute', left: lerp(1480, 750, bc), top: 900, opacity: bc}}>
-            <ClipCard id="C" w={300} h={375} />
+            <ClipCard id="C" w={300} h={375} appearAt={s(6)} />
           </div>
         </>
       )}
       {a > 0 && (
         <div style={{position: 'absolute', left: W / 2 - 230, top: 760, transform: `scale(${0.7 + 0.3 * a})`, opacity: a, zIndex: 3}}>
-          <ClipCard id="A" w={460} h={575} traceAt={s(4)} />
+          <ClipCard id="A" w={460} h={575} traceAt={s(4)} appearAt={s(4)} />
         </div>
       )}
     </Light>
@@ -321,7 +321,7 @@ export const FixMove: React.FC = () => {
       </div>
       <div style={{position: 'absolute', left: W / 2 - 300, top: 620, perspective: 1400}}>
         <div style={{transform: `rotateY(${tilt}deg) scale(${hit})`}}>
-          <ClipCard id="D" w={600} h={750} frozen={!alive} grey={1 - sat} />
+          <ClipCard id="D" w={600} h={750} frozen={!alive} grey={1 - sat} appearAt={s(2)} />
         </div>
       </div>
     </Light>
@@ -353,7 +353,7 @@ export const Proof: React.FC<{clips: string[]}> = ({clips}) => {
                 opacity: p,
               }}
             >
-              <ClipCard id={id} w={300} h={375} />
+              <ClipCard id={id} w={300} h={375} appearAt={s(i * 2)} />
               <div style={{fontFamily: FONT, fontSize: 48, fontWeight: 600, color: isPh(title) ? C.mid : C.ink, fontStyle: isPh(title) ? 'italic' : 'normal', width: 480}}>
                 {ph(title, 'short title')}
               </div>
@@ -365,7 +365,7 @@ export const Proof: React.FC<{clips: string[]}> = ({clips}) => {
         <TextSwap
           lines={[
             {text: 'All made with AI.', at: 0},
-            {text: 'All by @jiri_ai.', at: s(4)},
+            {text: 'All by @jire_ai.', at: s(4)},
           ]}
           size={96}
         />
@@ -459,7 +459,7 @@ export const FollowScene: React.FC<{textAt: number; pushIn: number; click: numbe
           }}
         >
           <div style={{width: 220, height: 220, borderRadius: '50%', background: C.navy, marginTop: 70, display: 'grid', placeItems: 'center', color: C.white, fontSize: 110, fontWeight: 800}}>J</div>
-          <div style={{fontSize: 76, fontWeight: 800, color: C.ink, marginTop: 40, letterSpacing: -2}}>@jiri_ai</div>
+          <div style={{fontSize: 76, fontWeight: 800, color: C.ink, marginTop: 40, letterSpacing: -2}}>@jire_ai</div>
           <div
             style={{
               marginTop: 60,
@@ -505,7 +505,7 @@ export const EndCard: React.FC = () => {
             textShadow: `0 0 40px ${C.glow}`,
           }}
         >
-          jiri_ai
+          jire_ai
         </div>
       </AbsoluteFill>
     </DarkGlow>
@@ -524,7 +524,7 @@ export const ClipPerBar: React.FC<{items: {clip: string; label: string}[]}> = ({
         <Kinetic key={i} text={items[i].label} at={i * s(2)} size={92} />
       </div>
       <div style={{position: 'absolute', left: W / 2 - 300, top: 620, transform: `scale(${0.85 + 0.15 * p})`, opacity: p}}>
-        <ClipCard id={items[i].clip} w={600} h={750} traceAt={i * s(2)} />
+        <ClipCard id={items[i].clip} w={600} h={750} traceAt={i * s(2)} appearAt={i * s(2)} />
       </div>
     </Light>
   );

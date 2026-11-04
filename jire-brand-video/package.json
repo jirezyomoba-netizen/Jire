@@ -1,12 +1,13 @@
 {
-  "name": "jiri-brand-video",
+  "name": "jire-brand-video",
   "version": "1.0.0",
   "description": "Brand Builders 60s + 15s animated UI video (Remotion), beat-locked at 120 BPM",
   "scripts": {
+    "music": "node scripts/compose-soundtrack.mjs",
     "guide": "node scripts/guide-track.mjs",
-    "studio": "npm run guide && remotion studio src/index.ts",
-    "render:60": "npm run guide && remotion render src/index.ts BrandBuilders60 out/jiri-brand-builders-60s.mp4",
-    "render:15": "npm run guide && remotion render src/index.ts BrandBuilders15 out/jiri-brand-builders-15s.mp4",
+    "studio": "npm run music && remotion studio src/index.ts",
+    "render:60": "npm run music && remotion render src/index.ts BrandBuilders60 out/jire-brand-builders-60s.mp4",
+    "render:15": "npm run music && remotion render src/index.ts BrandBuilders15 out/jire-brand-builders-15s.mp4",
     "typecheck": "tsc -p ."
   },
   "dependencies": {

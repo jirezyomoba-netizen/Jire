@@ -1,8 +1,8 @@
 import React from 'react';
-import {AbsoluteFill, Freeze, OffthreadVideo, staticFile, useCurrentFrame} from 'remotion';
+import {AbsoluteFill, Freeze, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {prog} from './anim';
 import {CLIPS} from './clips';
-import {C, FONT} from './theme';
+import {C, FONT, FPS} from './theme';
 
 /* ---------- Backgrounds ---------- */
 
@@ -203,10 +203,13 @@ export const ClipCard: React.FC<{
   frozen?: boolean;
   grey?: number; // 0..1 desaturation
   traceAt?: number; // frame the accent ring starts tracing
+  appearAt?: number; // scene frame the clip starts playing from its in-point
   style?: React.CSSProperties;
-}> = ({id, w, h, frozen, grey = 0, traceAt, style}) => {
+}> = ({id, w, h, frozen, grey = 0, traceAt, appearAt = 0, style}) => {
   const f = useCurrentFrame();
-  const src = CLIPS[id];
+  const spec = CLIPS[id];
+  const src = spec?.file;
+  const startFrom = spec ? Math.round(spec.start * FPS) : 0;
   const t = frozen ? 0 : f;
   const hue = HUES[id] ?? 220;
   const trace = traceAt === undefined ? 0 : prog(f, traceAt, 30);
@@ -228,10 +231,12 @@ export const ClipCard: React.FC<{
       {src ? (
         frozen ? (
           <Freeze frame={0}>
-            <OffthreadVideo src={staticFile(`clips/${src}`)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+            <OffthreadVideo src={staticFile(`clips/${src}`)} startFrom={startFrom} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
           </Freeze>
         ) : (
-          <OffthreadVideo src={staticFile(`clips/${src}`)} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+          <Sequence from={appearAt} layout="none">
+            <OffthreadVideo src={staticFile(`clips/${src}`)} startFrom={startFrom} muted style={{width: '100%', height: '100%', objectFit: 'cover'}} />
+          </Sequence>
         )
       ) : (
         <div

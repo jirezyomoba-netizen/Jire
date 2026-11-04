@@ -11,7 +11,7 @@ const At: React.FC<{a: number; b: number; children: React.ReactNode}> = ({a, b, 
   </Sequence>
 );
 
-export const MUSIC_60 = 'guide-60.wav'; // replace with your licensed track (same timing)
+export const MUSIC_60 = 'soundtrack-60.wav'; // original track from scripts/compose-soundtrack.mjs
 
 export const Main60: React.FC = () => (
   <AbsoluteFill style={{background: '#000'}}>
@@ -42,7 +42,7 @@ export const Main60: React.FC = () => (
         from="none"
         barY={760}
         title={{lines: ['3. Let AI do the', 'heavy lifting'], at: 0}}
-        text={COPY.promptE ?? '[your real prompt for clip E]'}
+        text={COPY.promptE ?? '[the prompt you used for this clip]'}
         placeholder={COPY.promptE == null}
         morph={[0, 0]}
         type={[0.5, 2.5]}
@@ -53,7 +53,7 @@ export const Main60: React.FC = () => (
       />
     </At>
     <At a={40} b={50}>
-      <Proof clips={['E', 'F', 'G', 'H', 'A']} />
+      <Proof clips={['P1', 'P2', 'P3', 'P4']} />
     </At>
     <At a={50} b={54}>
       <ClassNote />

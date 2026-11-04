@@ -9,7 +9,7 @@ const At: React.FC<{a: number; b: number; children: React.ReactNode}> = ({a, b, 
   </Sequence>
 );
 
-export const MUSIC_15 = 'guide-15.wav'; // replace with your licensed track (same timing)
+export const MUSIC_15 = 'soundtrack-15.wav'; // original track from scripts/compose-soundtrack.mjs
 
 export const Cut15: React.FC = () => (
   <AbsoluteFill style={{background: '#000'}}>
@@ -25,9 +25,9 @@ export const Cut15: React.FC = () => (
     <At a={6.25} b={12}>
       <ClipPerBar
         items={[
-          {clip: 'A', label: 'One look'},
-          {clip: 'D', label: 'Make it move'},
-          {clip: 'E', label: 'AI does the work'},
+          {clip: 'Q1', label: 'One look'},
+          {clip: 'Q2', label: 'Make it move'},
+          {clip: 'Q3', label: 'AI does the work'},
         ]}
       />
     </At>
