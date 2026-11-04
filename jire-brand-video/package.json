@@ -6,8 +6,8 @@
     "music": "node scripts/compose-soundtrack.mjs",
     "guide": "node scripts/guide-track.mjs",
     "studio": "npm run music && remotion studio src/index.ts",
-    "render:60": "npm run music && remotion render src/index.ts BrandBuilders60 out/jire-brand-builders-60s.mp4",
-    "render:15": "npm run music && remotion render src/index.ts BrandBuilders15 out/jire-brand-builders-15s.mp4",
+    "render:60": "npm run music && remotion render src/index.ts BrandBuilders60 out/jire-brand-builders-60s.mp4 && ffmpeg -y -v error -i out/jire-brand-builders-60s.mp4 -c:v copy -c:a aac -b:a 256k -shortest -movflags +faststart out/jire-brand-builders-60s-sound.mp4",
+    "render:15": "npm run music && remotion render src/index.ts BrandBuilders15 out/jire-brand-builders-15s.mp4 && ffmpeg -y -v error -i out/jire-brand-builders-15s.mp4 -c:v copy -c:a aac -b:a 256k -shortest -movflags +faststart out/jire-brand-builders-15s-sound.mp4",
     "typecheck": "tsc -p ."
   },
   "dependencies": {
