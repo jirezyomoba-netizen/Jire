@@ -24,8 +24,8 @@ export const CLIPS: Record<string, ClipSpec> = {
 
 // Text only you can supply. While a value is null it renders as grey [bracketed] text.
 export const COPY = {
-  promptE: null as string | null, // the prompt you typed to make the stream clip
-  classWhen: null as string | null, // e.g. "Coming soon" or "Starts 1 Dec"
-  classLine: null as string | null, // one true sentence on what the class teaches
-  proofTitles: [null, null, null, null] as (string | null)[], // a 2-4 word name for each proof clip
+  promptE: 'Wide shot: a man in robes walks by a desert stream' as string | null, // the prompt you typed to make the stream clip
+  classWhen: 'Coming in December' as string | null, // e.g. "Coming soon" or "Starts 1 Dec"
+  classLine: 'Learn to make entertaining brand videos and commercials with AI.' as string | null, // one true sentence on what the class teaches
+  proofTitles: ['Desert walk', 'On the call', 'Studio shoot', 'Outfit drop'] as (string | null)[], // a 2-4 word name for each proof clip
 };
