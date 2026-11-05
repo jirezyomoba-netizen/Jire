@@ -11,6 +11,7 @@
     "typecheck": "tsc -p ."
   },
   "dependencies": {
+    "@fontsource/playfair-display": "^5.1.0",
     "@remotion/cli": "^4.0.300",
     "@types/react": "^18.3.12",
     "react": "^18.3.1",
