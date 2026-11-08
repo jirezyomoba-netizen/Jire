@@ -4,3 +4,4 @@ public/guide-*.wav
 public/soundtrack-*.wav
 public/clips/*
 !public/clips/.gitkeep
+public/talk/
