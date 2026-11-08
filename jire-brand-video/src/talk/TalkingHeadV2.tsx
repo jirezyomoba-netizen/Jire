@@ -1,4 +1,5 @@
 import '@fontsource/montserrat/300.css';
+import '@fontsource/montserrat/500.css';
 import '@fontsource/montserrat/900.css';
 import '@fontsource/playfair-display/900.css';
 import React, {useEffect, useState} from 'react';
@@ -26,7 +27,7 @@ export const V2_TOTAL = edl.duration + 2.4;
 const useFonts = () => {
   const [h] = useState(() => delayRender('fonts'));
   useEffect(() => {
-    Promise.all(['300 60px Montserrat', '900 60px Montserrat', '900 60px "Playfair Display"'].map((x) => document.fonts.load(x)))
+    Promise.all(['300 60px Montserrat', '500 60px Montserrat', '900 60px Montserrat', '900 60px "Playfair Display"'].map((x) => document.fonts.load(x)))
       .catch(() => undefined)
       .then(() => continueRender(h));
   }, [h]);
@@ -114,7 +115,10 @@ const BigTitle: React.FC<{a: number; b: number; swaps: Swap[]}> = ({a, b, swaps}
 
 /* ---------- thin captions: each word fades in where it sits, the phrase builds up ---------- */
 const ACCENT_RED = new Set(['hijack', 'jobs?', 'minutes', 'crush', 'thumbs', 'unimaginable', 'unpredictable.', 'jump', 'business,', 'brand,', 'project.', 'follow', 'amazing', 'beautiful', 'now.']);
-const accent = (w: string) => (/^ai[,.?]?$/i.test(w) ? BLUE : ACCENT_RED.has(w.toLowerCase()) ? RED : '#FFFFFF');
+const RED_LIGHT = '#FF4A3D';
+const BLUE_LIGHT = '#7F98FF';
+const accent = (w: string) => (/^ai[,.?]?$/i.test(w) ? BLUE_LIGHT : ACCENT_RED.has(w.toLowerCase()) ? RED_LIGHT : '#FFFFFF');
+const accentWeight = (w: string) => (accent(w) === '#FFFFFF' ? 300 : 500);
 
 const ThinCaptions: React.FC = () => {
   const f = useCurrentFrame();
@@ -132,7 +136,7 @@ const ThinCaptions: React.FC = () => {
             key={w.i}
             style={{
               fontFamily: THIN,
-              fontWeight: 300,
+              fontWeight: accentWeight(w.w),
               fontSize: 70,
               lineHeight: 1.2,
               color: accent(w.w),
@@ -256,8 +260,8 @@ const Handle: React.FC = () => {
   if (f < a || f > b + 8) return null;
   const p = prog(f, a, 10);
   return (
-    <div style={{position: 'absolute', top: 660, left: 0, right: 0, textAlign: 'center', opacity: p * (1 - prog(f, b, 8)), filter: `blur(${(1 - p) * 12}px)`}}>
-      <span style={{fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: BLUE, letterSpacing: -3, textShadow: '0 10px 40px rgba(20,40,160,.45)'}}>@jire_ai</span>
+    <div style={{position: 'absolute', top: 1600, left: 0, right: 0, textAlign: 'center', opacity: p * (1 - prog(f, b, 8)), filter: `blur(${(1 - p) * 12}px)`}}>
+      <span style={{fontFamily: SERIF, fontWeight: 900, fontSize: 120, color: BLUE_LIGHT, letterSpacing: -3, textShadow: '0 10px 40px rgba(0,0,0,.55)'}}>@jire_ai</span>
     </div>
   );
 };
