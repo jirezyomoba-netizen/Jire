@@ -9,7 +9,7 @@
 <body>
 <title>jire_ai</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="jire_ai makes brand videos with AI: launch videos, animated stories and social ads. Hire me, or join the Brand Builders class waitlist.">
+<meta name="description" content="jire_ai creates content with AI: brand videos, animation, photo shoots, flyers and social content. Hire me, or join the Brand Builders class waitlist.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
@@ -102,13 +102,13 @@ section{padding-block:72px}
 @media (max-width:560px){.reel{grid-template-columns:1fr}.reel video{aspect-ratio:4/5}.clips{grid-template-columns:1fr 1fr}.clips .clip:last-child{grid-column:1/-1;aspect-ratio:16/10}}
 
 /* services */
-.services{display:grid;grid-template-columns:repeat(4, minmax(0,1fr));border-top:1px solid var(--line)}
-.svc{padding:28px 24px 8px 0;display:flex;flex-direction:column;gap:10px;min-width:0}
-.svc + .svc{padding-left:24px;border-left:1px solid var(--line)}
+.services{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));border-top:1px solid var(--line)}
+.svc{padding:28px 24px 28px 0;display:flex;flex-direction:column;gap:10px;min-width:0;border-bottom:1px solid var(--line)}
+.svc:not(:nth-child(3n+1)){padding-left:24px;border-left:1px solid var(--line)}
 .svc h3{font-size:22px}
 .svc p{color:var(--muted);font-size:16px}
-@media (max-width:900px){.services{grid-template-columns:1fr 1fr}.svc:nth-child(3){border-left:0;padding-left:0}.svc{border-top:1px solid var(--line)}}
-@media (max-width:520px){.services{grid-template-columns:1fr}.svc,.svc + .svc{border-left:0;padding-left:0}}
+@media (max-width:900px){.services{grid-template-columns:1fr 1fr}.svc:not(:nth-child(3n+1)){border-left:0;padding-left:0}.svc:nth-child(even){border-left:1px solid var(--line);padding-left:24px}}
+@media (max-width:520px){.services{grid-template-columns:1fr}.svc:nth-child(n){border-left:0;padding-left:0}}
 
 /* process */
 .steps{display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:24px;counter-reset:s;list-style:none;padding:0;margin:0}
@@ -171,11 +171,11 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
 <main id="top">
   <div class="wrap hero">
     <div>
-      <p class="label">jire_ai · AI brand videos</p>
-      <h1 style="margin-top:18px">I make brand videos <em class="s">people stop scrolling for.</em></h1>
-      <p class="lede">Launch videos, animated stories and social ads for your brand. Planned shot by shot, made with AI, and cut to the beat of original music.</p>
+      <p class="label">jire_ai · AI content creator</p>
+      <h1 style="margin-top:18px">I create content with AI <em class="s">people stop scrolling for.</em></h1>
+      <p class="lede">Brand videos, animation, photo shoots and flyers for your business. Planned with you, made with AI, and ready to post.</p>
       <div class="ctas">
-        <a class="btn btn-primary" href="#hire">Hire me to make your brand video</a>
+        <a class="btn btn-primary" href="#hire">Hire me to create your content</a>
         <a class="btn btn-ghost" href="#class">Join the class waitlist</a>
       </div>
     </div>
@@ -184,7 +184,7 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
         <video src="media/hero-loop.mp4" poster="media/hero-loop.jpg" autoplay muted loop playsinline aria-label="Brand Builders promo, playing without sound"></video>
       </div>
       <span class="chip c1"><b>9:16</b> vertical</span>
-      <span class="chip c2">original <b>music</b></span>
+      <span class="chip c2">video · <b>photo</b> · flyer</span>
       <span class="chip c3">ready to <b>post</b></span>
     </div>
   </div>
@@ -193,7 +193,7 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
     <div class="wrap">
       <div class="head">
         <h2>Proof of <em class="s">work</em></h2>
-        <p>Recent pieces. Tap a video to play it with sound.</p>
+        <p>Recent videos. Tap one to play it with sound. Photo shoots and flyers are being added.</p>
       </div>
       <div class="feature">
         <article class="reel">
@@ -226,14 +226,16 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
   <section id="services">
     <div class="wrap">
       <div class="head">
-        <h2>What I can make <em class="s">for you</em></h2>
-        <p>Every video comes in the sizes your platforms need, with music and captions.</p>
+        <h2>What I create <em class="s">for you</em></h2>
+        <p>Everything comes in the sizes your platforms need, ready to post or print.</p>
       </div>
       <div class="services">
-        <div class="svc"><h3>Launch videos</h3><p>Show what your product or service does in 15 to 60 seconds.</p></div>
-        <div class="svc"><h3>Animated stories</h3><p>2D or 3D characters that carry your message from hook to ending.</p></div>
-        <div class="svc"><h3>Social ads and reels</h3><p>Vertical cuts for Instagram, TikTok and X, built to stop the scroll.</p></div>
-        <div class="svc"><h3>End cards and titles</h3><p>Motion graphics that open or close your video with your brand.</p></div>
+        <div class="svc"><h3>Brand videos</h3><p>Launch videos, promos and ads that show what you sell in 15 to 60 seconds.</p></div>
+        <div class="svc"><h3>Animation videos</h3><p>2D and 3D animated stories with characters that carry your message.</p></div>
+        <div class="svc"><h3>AI photo shoots</h3><p>Studio-style photos of you, your models or your products, without booking a studio.</p></div>
+        <div class="svc"><h3>Flyers and graphics</h3><p>Event flyers, posters and promo designs for print and social media.</p></div>
+        <div class="svc"><h3>Social content</h3><p>Reels, carousels and posts sized for Instagram, TikTok and X.</p></div>
+        <div class="svc"><h3>End cards and titles</h3><p>Motion graphics that open or close your videos with your brand.</p></div>
       </div>
     </div>
   </section>
@@ -245,9 +247,9 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
         <p>You see and approve the plan before anything is made.</p>
       </div>
       <ol class="steps">
-        <li><h3>Tell me about your brand</h3><p>What you sell, who it's for, and what the video should get people to do.</p></li>
-        <li><h3>Approve the plan</h3><p>You get the concept, the script and a timed shot list to review and change.</p></li>
-        <li><h3>Get your video</h3><p>A ready-to-post file for each platform, with the music and captions in place.</p></li>
+        <li><h3>Tell me about your brand</h3><p>What you sell, who it's for, and what the content should get people to do.</p></li>
+        <li><h3>Approve the plan</h3><p>You get the concept and a plan to review and change before anything is made.</p></li>
+        <li><h3>Get your content</h3><p>Ready-to-post files for each platform, or print-ready files for flyers.</p></li>
       </ol>
     </div>
   </section>
@@ -257,7 +259,7 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
       <div class="formcard hire">
         <div class="side">
           <p class="label">Paid work</p>
-          <h2 style="margin-top:14px">Hire me to make your <em class="s">brand video</em></h2>
+          <h2 style="margin-top:14px">Hire me to create your <em class="s">brand content</em></h2>
           <p>Tell me what you need. I'll reply with questions or a first idea.</p>
         </div>
         <form id="hire-form" name="hire" method="POST" data-netlify="true" netlify-honeypot="bot-field">
@@ -266,14 +268,14 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
           <div class="f"><label for="hire-name">Your name</label><input id="hire-name" name="name" autocomplete="name" required></div>
           <div class="f"><label for="hire-contact">Email or WhatsApp number</label><input id="hire-contact" name="contact" required></div>
           <div class="f"><label for="hire-brand">Brand or business <span>(optional)</span></label><input id="hire-brand" name="brand" autocomplete="organization"></div>
-          <div class="f"><label for="hire-type">Type of video</label>
+          <div class="f"><label for="hire-type">What do you need?</label>
             <select id="hire-type" name="type">
-              <option>Launch or product video</option><option>Animated story</option><option>Social ad or reel</option><option>End card or titles</option><option>Not sure yet</option>
+              <option>Brand or promo video</option><option>Animation video</option><option>AI photo shoot</option><option>Flyer or graphic design</option><option>Social media content</option><option>End card or titles</option><option>Not sure yet</option>
             </select></div>
-          <div class="f"><label for="hire-length">Length</label>
-            <select id="hire-length" name="length"><option>15 seconds</option><option>30 seconds</option><option>60 seconds</option><option>Not sure yet</option></select></div>
+          <div class="f"><label for="hire-length">Video length <span>(videos only)</span></label>
+            <select id="hire-length" name="length"><option>Not a video</option><option>15 seconds</option><option>30 seconds</option><option>60 seconds</option><option>Not sure yet</option></select></div>
           <div class="f"><label for="hire-when">When do you need it? <span>(optional)</span></label><input id="hire-when" name="when" placeholder="e.g. end of the month"></div>
-          <div class="f full"><label for="hire-msg">Tell me about the video</label><textarea id="hire-msg" name="message" placeholder="What are you promoting, and who is it for?" required></textarea></div>
+          <div class="f full"><label for="hire-msg">Tell me about the project</label><textarea id="hire-msg" name="message" placeholder="What are you promoting, and who is it for?" required></textarea></div>
           <div class="f full"><button class="btn btn-primary" type="submit">Send request</button></div>
           <p class="status" role="status" aria-live="polite"></p>
         </form>
@@ -305,7 +307,7 @@ footer .bar{border-top:1px solid var(--line);padding-top:28px;flex-wrap:wrap}
 <footer>
   <div class="wrap bar">
     <a class="brand" href="#top"><span class="avatar" aria-hidden="true">J</span>jire_ai</a>
-    <span>@jire_ai · Brand videos made with AI · © 2026</span>
+    <span>@jire_ai · Content made with AI · © 2026</span>
   </div>
 </footer>
 
