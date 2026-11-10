@@ -1,0 +1,985 @@
+{
+ "pieces": [
+  {
+   "n": 1,
+   "id": "1B",
+   "scene": 1,
+   "tl": [
+    0.0,
+    2.0
+   ],
+   "kind": "flow",
+   "look": "dusk",
+   "title": "Top-down: hands and cluttered desk",
+   "join": "Straight cut",
+   "file": "01_S1_1B.mp4",
+   "dur": 2.0
+  },
+  {
+   "n": 2,
+   "id": "1A",
+   "scene": 1,
+   "tl": [
+    2.0,
+    10.0
+   ],
+   "kind": "flow",
+   "look": "dusk",
+   "title": "Wide to medium dolly-in, overwhelmed",
+   "join": "Match cut + whoosh (same framing, dusk to night)",
+   "file": "02_S1_1A.mp4",
+   "dur": 8.0
+  },
+  {
+   "n": 3,
+   "id": "2A",
+   "scene": 2,
+   "tl": [
+    10.0,
+    13.0
+   ],
+   "kind": "flow",
+   "look": "night",
+   "title": "Front medium close-up, scrolls and leans in",
+   "join": "Straight cut on the lean",
+   "file": "03_S2_2A.mp4",
+   "dur": 3.0
+  },
+  {
+   "n": 4,
+   "id": "2B",
+   "scene": 2,
+   "tl": [
+    13.0,
+    16.0
+   ],
+   "kind": "flow",
+   "look": "night",
+   "title": "Over the shoulder, typing, screen glow",
+   "join": "4-frame white flash",
+   "file": "04_S2_2B.mp4",
+   "dur": 3.0
+  },
+  {
+   "n": 5,
+   "id": "R1",
+   "scene": 2,
+   "tl": [
+    16.0,
+    20.0
+   ],
+   "kind": "rec",
+   "look": "screen",
+   "title": "Claude home screen, click into message box",
+   "join": "Straight cut",
+   "file": "05_S2_R1.mp4",
+   "dur": 4.0
+  },
+  {
+   "n": 6,
+   "id": "R2",
+   "scene": 3,
+   "tl": [
+    20.0,
+    23.5
+   ],
+   "kind": "rec",
+   "look": "screen",
+   "title": "Task request typed (300%), plan appears",
+   "join": "Straight cut",
+   "file": "06_S3_R2.mp4",
+   "dur": 3.5
+  },
+  {
+   "n": 7,
+   "id": "3A",
+   "scene": 3,
+   "tl": [
+    23.5,
+    30.0
+   ],
+   "kind": "flow",
+   "look": "night",
+   "title": "Three-quarter close-up, nods, hand on chin",
+   "join": "1 s cross-dissolve (night to morning)",
+   "pad_tail": 0.5,
+   "file": "07_S3_3A.mp4",
+   "dur": 7.0
+  },
+  {
+   "n": 8,
+   "id": "4A",
+   "scene": 4,
+   "tl": [
+    30.0,
+    34.0
+   ],
+   "kind": "flow",
+   "look": "morning",
+   "title": "Same framing in daylight, writes in notebook",
+   "join": "Straight cut",
+   "pad_head": 0.5,
+   "file": "08_S4_4A.mp4",
+   "dur": 4.5
+  },
+  {
+   "n": 9,
+   "id": "R5",
+   "scene": 4,
+   "tl": [
+    34.0,
+    37.0
+   ],
+   "kind": "rec",
+   "look": "screen",
+   "title": "Slow scroll through the weekly plan",
+   "join": "Straight cut",
+   "file": "09_S4_R5.mp4",
+   "dur": 3.0
+  },
+  {
+   "n": 10,
+   "id": "4B",
+   "scene": 4,
+   "tl": [
+    37.0,
+    40.0
+   ],
+   "kind": "flow",
+   "look": "morning",
+   "title": "Wide tidy desk, sits back upright",
+   "join": "Straight cut",
+   "file": "10_S4_4B.mp4",
+   "dur": 3.0
+  },
+  {
+   "n": 11,
+   "id": "5A",
+   "scene": 5,
+   "tl": [
+    40.0,
+    45.5
+   ],
+   "kind": "flow",
+   "look": "morning",
+   "title": "Side profile, confident typing, slow track",
+   "join": "Swish cut",
+   "file": "11_S5_5A.mp4",
+   "dur": 5.5
+  },
+  {
+   "n": 12,
+   "id": "R6",
+   "scene": 5,
+   "tl": [
+    45.5,
+    48.0
+   ],
+   "kind": "rec",
+   "look": "screen",
+   "title": "He rewrites a sentence of the draft himself",
+   "join": "Straight cut",
+   "file": "12_S5_R6.mp4",
+   "dur": 2.5
+  },
+  {
+   "n": 13,
+   "id": "5B",
+   "scene": 5,
+   "tl": [
+    48.0,
+    50.0
+   ],
+   "kind": "flow",
+   "look": "morning",
+   "title": "Front close-up, looks up into the lens",
+   "join": "Invisible join (6A starts on this frame)",
+   "file": "13_S5_5B.mp4",
+   "dur": 2.0
+  },
+  {
+   "n": 14,
+   "id": "6A",
+   "scene": 6,
+   "tl": [
+    50.0,
+    58.0
+   ],
+   "kind": "flow",
+   "look": "morning",
+   "title": "Speaks to camera, slow push-in",
+   "join": "Freeze on last frame",
+   "file": "14_S6_6A.mp4",
+   "dur": 8.0
+  },
+  {
+   "n": 15,
+   "id": "END",
+   "scene": 6,
+   "tl": [
+    58.0,
+    60.0
+   ],
+   "kind": "still",
+   "look": "morning",
+   "title": "Held last frame of 6A, 3% push-in",
+   "join": "6-frame fade to black",
+   "file": "15_S6_END.mp4",
+   "dur": 2.0
+  }
+ ],
+ "cards": [
+  {
+   "id": "R3",
+   "tl": [
+    25.0,
+    26.7
+   ],
+   "title": "Marketing ideas request and answer"
+  },
+  {
+   "id": "R4",
+   "tl": [
+    26.7,
+    28.5
+   ],
+   "title": "Customer reply request and draft"
+  }
+ ],
+ "gfx": [
+  {
+   "file": "word_customers",
+   "kind": "word",
+   "text": "CUSTOMERS",
+   "color": "#FFFFFF",
+   "tl": [
+    2.9,
+    3.8
+   ],
+   "layer": "behind",
+   "scene": 1
+  },
+  {
+   "file": "word_marketing",
+   "kind": "word",
+   "text": "MARKETING",
+   "color": "#FFFFFF",
+   "tl": [
+    3.8,
+    4.6
+   ],
+   "layer": "behind",
+   "scene": 1
+  },
+  {
+   "file": "word_emails",
+   "kind": "word",
+   "text": "EMAILS",
+   "color": "#FFFFFF",
+   "tl": [
+    4.6,
+    5.4
+   ],
+   "layer": "behind",
+   "scene": 1
+  },
+  {
+   "file": "word_paperwork",
+   "kind": "word",
+   "text": "PAPERWORK",
+   "color": "#FFFFFF",
+   "tl": [
+    5.4,
+    7.6
+   ],
+   "layer": "behind",
+   "scene": 1
+  },
+  {
+   "file": "bubble_1",
+   "kind": "bubble",
+   "text": "New message",
+   "pos": [
+    640,
+    1180
+   ],
+   "tl": [
+    5.2,
+    8.0
+   ],
+   "layer": "front",
+   "scene": 1
+  },
+  {
+   "file": "bubble_2",
+   "kind": "bubble",
+   "text": "3 new emails",
+   "pos": [
+    560,
+    1060
+   ],
+   "tl": [
+    5.8,
+    8.0
+   ],
+   "layer": "front",
+   "scene": 1
+  },
+  {
+   "file": "bubble_3",
+   "kind": "bubble",
+   "text": "Order enquiry",
+   "pos": [
+    660,
+    940
+   ],
+   "tl": [
+    6.3,
+    8.0
+   ],
+   "layer": "front",
+   "scene": 1
+  },
+  {
+   "file": "bubble_4",
+   "kind": "bubble",
+   "text": "Reminder: proposal",
+   "pos": [
+    520,
+    820
+   ],
+   "tl": [
+    6.8,
+    8.0
+   ],
+   "layer": "front",
+   "scene": 1
+  },
+  {
+   "file": "word_smarter_way",
+   "kind": "word",
+   "text": "A SMARTER|WAY?",
+   "color": "#FFFFFF",
+   "tl": [
+    12.0,
+    13.0
+   ],
+   "layer": "behind",
+   "scene": 2
+  },
+  {
+   "file": "flash_white",
+   "kind": "flash",
+   "tl": [
+    15.93,
+    16.13
+   ],
+   "layer": "front",
+   "scene": 2
+  },
+  {
+   "file": "chip_tasks",
+   "kind": "chip",
+   "text": "1. Organise my tasks",
+   "pos": [
+    60,
+    150
+   ],
+   "tl": [
+    22.0,
+    23.5
+   ],
+   "layer": "front",
+   "scene": 3
+  },
+  {
+   "file": "chip_marketing",
+   "kind": "chip",
+   "text": "2. Marketing ideas",
+   "pos": [
+    60,
+    150
+   ],
+   "tl": [
+    25.0,
+    26.7
+   ],
+   "layer": "front",
+   "scene": 3
+  },
+  {
+   "file": "chip_reply",
+   "kind": "chip",
+   "text": "3. Customer reply",
+   "pos": [
+    60,
+    150
+   ],
+   "tl": [
+    26.7,
+    28.5
+   ],
+   "layer": "front",
+   "scene": 3
+  },
+  {
+   "file": "word_clearer",
+   "kind": "word",
+   "text": "CLEARER|DIRECTION",
+   "color": "#0A2463",
+   "tl": [
+    30.8,
+    33.2
+   ],
+   "layer": "behind",
+   "scene": 4
+  },
+  {
+   "file": "chip_plan_week",
+   "kind": "chip",
+   "text": "This week's plan",
+   "pos": [
+    60,
+    150
+   ],
+   "tl": [
+    34.0,
+    37.0
+   ],
+   "layer": "front",
+   "scene": 4
+  },
+  {
+   "file": "chip_brainstorm",
+   "kind": "chip",
+   "text": "Brainstorm",
+   "pos": [
+    60,
+    420
+   ],
+   "tl": [
+    40.6,
+    45.0
+   ],
+   "layer": "front",
+   "scene": 5
+  },
+  {
+   "file": "chip_research",
+   "kind": "chip",
+   "text": "Research",
+   "pos": [
+    60,
+    530
+   ],
+   "tl": [
+    41.4,
+    45.0
+   ],
+   "layer": "front",
+   "scene": 5
+  },
+  {
+   "file": "chip_write",
+   "kind": "chip",
+   "text": "Write",
+   "pos": [
+    60,
+    640
+   ],
+   "tl": [
+    42.6,
+    45.0
+   ],
+   "layer": "front",
+   "scene": 5
+  },
+  {
+   "file": "chip_plan",
+   "kind": "chip",
+   "text": "Plan",
+   "pos": [
+    60,
+    750
+   ],
+   "tl": [
+    43.2,
+    45.0
+   ],
+   "layer": "front",
+   "scene": 5
+  },
+  {
+   "file": "chip_my_edit",
+   "kind": "chip",
+   "text": "My edit",
+   "pos": [
+    60,
+    150
+   ],
+   "tl": [
+    45.5,
+    48.0
+   ],
+   "layer": "front",
+   "scene": 5
+  },
+  {
+   "file": "lower_third",
+   "kind": "lower",
+   "text": "Jire",
+   "sub": "@jire_ai",
+   "tl": [
+    50.6,
+    53.0
+   ],
+   "layer": "front",
+   "scene": 6
+  },
+  {
+   "file": "word_smarter",
+   "kind": "word",
+   "text": "SMARTER",
+   "color": "#0A2463",
+   "tl": [
+    53.0,
+    55.0
+   ],
+   "layer": "behind",
+   "scene": 6
+  },
+  {
+   "file": "endcard",
+   "kind": "endcard",
+   "tl": [
+    58.0,
+    60.0
+   ],
+   "layer": "behind",
+   "scene": 6
+  }
+ ],
+ "sfx": [
+  [
+   0.2,
+   "paper",
+   0.7,
+   -20,
+   0.0,
+   "Paper slide"
+  ],
+  [
+   1.0,
+   "paper",
+   0.7,
+   -20,
+   0.0,
+   "Paper slide"
+  ],
+  [
+   1.0,
+   "buzz",
+   0.6,
+   -16,
+   0.3,
+   "Phone buzz on wood"
+  ],
+  [
+   3.0,
+   "buzz",
+   0.6,
+   -18,
+   0.5,
+   "Phone buzz"
+  ],
+  [
+   5.2,
+   "ping",
+   0.2,
+   -20,
+   -0.5,
+   "Notification ping"
+  ],
+  [
+   5.8,
+   "ping",
+   0.2,
+   -20,
+   0.5,
+   "Notification ping"
+  ],
+  [
+   6.3,
+   "ping",
+   0.2,
+   -20,
+   -0.5,
+   "Notification ping"
+  ],
+  [
+   6.8,
+   "ping",
+   0.2,
+   -20,
+   0.5,
+   "Notification ping"
+  ],
+  [
+   5.4,
+   "exhale",
+   0.8,
+   -24,
+   0.0,
+   "Exhale"
+  ],
+  [
+   8.2,
+   "creak",
+   0.5,
+   -26,
+   0.0,
+   "Chair creak"
+  ],
+  [
+   9.6,
+   "whoosh",
+   0.5,
+   -18,
+   0.0,
+   "Whoosh into Scene 2"
+  ],
+  [
+   10.6,
+   "tick",
+   0.3,
+   -24,
+   0.0,
+   "Trackpad scroll"
+  ],
+  [
+   11.3,
+   "tick",
+   0.3,
+   -24,
+   0.0,
+   "Trackpad scroll"
+  ],
+  [
+   12.2,
+   "creak",
+   0.4,
+   -26,
+   0.0,
+   "Chair creak on lean"
+  ],
+  [
+   13.2,
+   "typing",
+   2.0,
+   -18,
+   0.0,
+   "Keyboard typing"
+  ],
+  [
+   15.8,
+   "whoosh",
+   0.4,
+   -18,
+   0.0,
+   "Rising whoosh into flash"
+  ],
+  [
+   16.1,
+   "confirm",
+   0.5,
+   -16,
+   0.0,
+   "Confirmation tone"
+  ],
+  [
+   18.3,
+   "click",
+   0.1,
+   -20,
+   0.0,
+   "Mouse click"
+  ],
+  [
+   20.0,
+   "typing_fast",
+   1.8,
+   -18,
+   0.0,
+   "Fast typing"
+  ],
+  [
+   21.9,
+   "click",
+   0.1,
+   -18,
+   0.0,
+   "Send click"
+  ],
+  [
+   22.2,
+   "textrun",
+   1.2,
+   -26,
+   0.0,
+   "Text appearing"
+  ],
+  [
+   25.0,
+   "swish",
+   0.3,
+   -22,
+   0.4,
+   "Card in"
+  ],
+  [
+   26.7,
+   "swish",
+   0.3,
+   -22,
+   0.0,
+   "Card swap"
+  ],
+  [
+   28.5,
+   "swish",
+   0.3,
+   -24,
+   -0.4,
+   "Card out"
+  ],
+  [
+   30.0,
+   "air",
+   1.0,
+   -22,
+   0.0,
+   "Airy whoosh over time change"
+  ],
+  [
+   31.6,
+   "pen",
+   1.4,
+   -20,
+   0.3,
+   "Pen writing"
+  ],
+  [
+   33.2,
+   "pen",
+   0.2,
+   -20,
+   0.3,
+   "Pen tick"
+  ],
+  [
+   34.0,
+   "scroll",
+   2.5,
+   -26,
+   0.0,
+   "Mouse-wheel scroll"
+  ],
+  [
+   37.3,
+   "tap",
+   0.2,
+   -22,
+   0.4,
+   "Pen set down"
+  ],
+  [
+   38.2,
+   "creak",
+   0.5,
+   -26,
+   0.0,
+   "Chair creak"
+  ],
+  [
+   40.0,
+   "typing",
+   2.0,
+   -20,
+   0.0,
+   "Confident typing"
+  ],
+  [
+   40.6,
+   "pop",
+   0.15,
+   -24,
+   0.5,
+   "Chip pop"
+  ],
+  [
+   41.4,
+   "pop",
+   0.15,
+   -24,
+   0.5,
+   "Chip pop"
+  ],
+  [
+   42.6,
+   "pop",
+   0.15,
+   -24,
+   0.5,
+   "Chip pop"
+  ],
+  [
+   43.2,
+   "pop",
+   0.15,
+   -24,
+   0.5,
+   "Chip pop"
+  ],
+  [
+   44.0,
+   "typing",
+   1.2,
+   -20,
+   0.0,
+   "Typing burst"
+  ],
+  [
+   45.4,
+   "swish",
+   0.3,
+   -22,
+   0.0,
+   "Swish into R6"
+  ],
+  [
+   46.0,
+   "typing",
+   1.6,
+   -22,
+   0.0,
+   "Light typing (his edit)"
+  ],
+  [
+   48.0,
+   "impact",
+   0.4,
+   -20,
+   0.0,
+   "Soft impact as he looks up"
+  ],
+  [
+   53.0,
+   "whoosh",
+   0.4,
+   -24,
+   0.0,
+   "Soft whoosh as SMARTER lands"
+  ],
+  [
+   55.6,
+   "impact",
+   0.5,
+   -22,
+   0.0,
+   "Soft impact under 'Claude'"
+  ],
+  [
+   58.6,
+   "confirm",
+   0.6,
+   -18,
+   0.0,
+   "Confirmation tone"
+  ]
+ ],
+ "amb": [
+  {
+   "tl": [
+    0.0,
+    10.25
+   ],
+   "type": "dusk",
+   "db": -32,
+   "note": "Office room tone, faint traffic"
+  },
+  {
+   "tl": [
+    9.75,
+    30.5
+   ],
+   "type": "night",
+   "db": -34,
+   "note": "Night room tone, faint air-conditioning"
+  },
+  {
+   "tl": [
+    29.5,
+    60.0
+   ],
+   "type": "morning",
+   "db": -32,
+   "note": "Morning room tone, faint birds and traffic (fades out 59.2-60)"
+  }
+ ],
+ "lines": [
+  {
+   "scene": 1,
+   "tl": [
+    0.4,
+    9.6
+   ],
+   "kind": "VO",
+   "text": "Running a business isn't easy. Between customers, marketing, emails and endless paperwork, sometimes it feels like there aren't enough hours in the day."
+  },
+  {
+   "scene": 2,
+   "tl": [
+    10.4,
+    19.2
+   ],
+   "kind": "VO",
+   "text": "Then one evening, while searching for a smarter way to work, I discovered something interesting. An AI assistant called Claude."
+  },
+  {
+   "scene": 3,
+   "tl": [
+    20.4,
+    29.4
+   ],
+   "kind": "VO",
+   "text": "I started by asking it to help me organise my business tasks, develop marketing ideas and write better responses to my customers."
+  },
+  {
+   "scene": 4,
+   "tl": [
+    30.4,
+    39.7
+   ],
+   "kind": "VO",
+   "text": "Suddenly, I had a clearer direction. My ideas were organised, my tasks were easier to plan, and I could focus on growing my business."
+  },
+  {
+   "scene": 5,
+   "tl": [
+    40.4,
+    49.6
+   ],
+   "kind": "VO",
+   "text": "From brainstorming to research, writing and planning, Claude became part of my daily workflow. And the best part? I was still in control."
+  },
+  {
+   "scene": 6,
+   "tl": [
+    50.3,
+    58.5
+   ],
+   "kind": "ON CAMERA",
+   "text": "Sometimes, you don't need more hands. You need a smarter way to work. Discover Claude. What would you create with it?"
+  }
+ ]
+}

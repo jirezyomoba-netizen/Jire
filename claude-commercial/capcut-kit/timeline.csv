@@ -1,0 +1,139 @@
+Track,Start,End,Length (s),Item,File,Notes
+1 Main video,0:00.00,0:02.00,2.0,Flow clip 1B,1-placeholders/01_S1_1B.mp4,Top-down: hands and cluttered desk. Out: Straight cut
+1 Main video,0:02.00,0:10.00,8.0,Flow clip 1A,1-placeholders/02_S1_1A.mp4,"Wide to medium dolly-in, overwhelmed. Out: Match cut + whoosh (same framing, dusk to night)"
+1 Main video,0:10.00,0:13.00,3.0,Flow clip 2A,1-placeholders/03_S2_2A.mp4,"Front medium close-up, scrolls and leans in. Out: Straight cut on the lean"
+1 Main video,0:13.00,0:16.00,3.0,Flow clip 2B,1-placeholders/04_S2_2B.mp4,"Over the shoulder, typing, screen glow. Out: 4-frame white flash"
+1 Main video,0:16.00,0:20.00,4.0,Screen recording R1,1-placeholders/05_S2_R1.mp4,"Claude home screen, click into message box. Out: Straight cut"
+1 Main video,0:20.00,0:23.50,3.5,Screen recording R2,1-placeholders/06_S3_R2.mp4,"Task request typed (300%), plan appears. Out: Straight cut"
+1 Main video,0:23.50,0:30.00,6.5,Flow clip 3A,1-placeholders/07_S3_3A.mp4,"Three-quarter close-up, nods, hand on chin. Out: 1 s cross-dissolve (night to morning). Placeholder is 7.0 s: extra 0.5 s tail for the dissolve"
+1 Main video,0:30.00,0:34.00,4.0,Flow clip 4A,1-placeholders/08_S4_4A.mp4,"Same framing in daylight, writes in notebook. Out: Straight cut. Placeholder is 4.5 s: extra 0.5 s head for the dissolve"
+1 Main video,0:34.00,0:37.00,3.0,Screen recording R5,1-placeholders/09_S4_R5.mp4,Slow scroll through the weekly plan. Out: Straight cut
+1 Main video,0:37.00,0:40.00,3.0,Flow clip 4B,1-placeholders/10_S4_4B.mp4,"Wide tidy desk, sits back upright. Out: Straight cut"
+1 Main video,0:40.00,0:45.50,5.5,Flow clip 5A,1-placeholders/11_S5_5A.mp4,"Side profile, confident typing, slow track. Out: Swish cut"
+1 Main video,0:45.50,0:48.00,2.5,Screen recording R6,1-placeholders/12_S5_R6.mp4,He rewrites a sentence of the draft himself. Out: Straight cut
+1 Main video,0:48.00,0:50.00,2.0,Flow clip 5B,1-placeholders/13_S5_5B.mp4,"Front close-up, looks up into the lens. Out: Invisible join (6A starts on this frame)"
+1 Main video,0:50.00,0:58.00,8.0,Flow clip 6A,1-placeholders/14_S6_6A.mp4,"Speaks to camera, slow push-in. Out: Freeze on last frame"
+1 Main video,0:58.00,1:00.00,2.0,Held frame END,1-placeholders/15_S6_END.mp4,"Held last frame of 6A, 3% push-in. Out: 6-frame fade to black"
+3 Overlay: cards,0:25.00,0:26.70,1.7,Recording card R3,1-placeholders/card_R3.png,"Marketing ideas request and answer. 86% width, rounded, slide in from right 8 frames, out to left"
+3 Overlay: cards,0:26.70,0:28.50,1.8,Recording card R4,1-placeholders/card_R4.png,"Customer reply request and draft. 86% width, rounded, slide in from right 8 frames, out to left"
+2 Overlay: cut-out of the man,0:02.00,0:10.00,8.0,Copy of the clip with auto cut-out (Scene 1),(made in CapCut),Sits above the 'behind' graphics. Split at the same frames as the main clip. Feather 2-4
+2 Overlay: cut-out of the man,0:10.00,0:13.00,3.0,Copy of the clip with auto cut-out (Scene 2),(made in CapCut),Sits above the 'behind' graphics. Split at the same frames as the main clip. Feather 2-4
+2 Overlay: cut-out of the man,0:30.00,0:34.00,4.0,Copy of the clip with auto cut-out (Scene 4),(made in CapCut),Sits above the 'behind' graphics. Split at the same frames as the main clip. Feather 2-4
+2 Overlay: cut-out of the man,0:50.00,1:00.00,10.0,Copy of the clip with auto cut-out (Scene 6),(made in CapCut),Sits above the 'behind' graphics. Split at the same frames as the main clip. Feather 2-4
+4 Graphics (behind him),0:02.90,0:03.80,0.9,Large word: CUSTOMERS,2-graphics/word_customers.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+4 Graphics (behind him),0:03.80,0:04.60,0.8,Large word: MARKETING,2-graphics/word_marketing.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+4 Graphics (behind him),0:04.60,0:05.40,0.8,Large word: EMAILS,2-graphics/word_emails.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+4 Graphics (behind him),0:05.40,0:07.60,2.2,Large word: PAPERWORK,2-graphics/word_paperwork.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+5 Graphics (in front),0:05.20,0:08.00,2.8,Notification bubble: New message,2-graphics/bubble_1.png,"Pop in 5 frames, fade out together at 0:08"
+5 Graphics (in front),0:05.80,0:08.00,2.2,Notification bubble: 3 new emails,2-graphics/bubble_2.png,"Pop in 5 frames, fade out together at 0:08"
+5 Graphics (in front),0:06.30,0:08.00,1.7,Notification bubble: Order enquiry,2-graphics/bubble_3.png,"Pop in 5 frames, fade out together at 0:08"
+5 Graphics (in front),0:06.80,0:08.00,1.2,Notification bubble: Reminder: proposal,2-graphics/bubble_4.png,"Pop in 5 frames, fade out together at 0:08"
+4 Graphics (behind him),0:12.00,0:13.00,1.0,Large word: A SMARTER WAY?,2-graphics/word_smarter_way.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+5 Graphics (in front),0:15.93,0:16.13,0.2,White flash,2-graphics/flash_white.png,Opacity 0-100-0 over 6 frames
+5 Graphics (in front),0:22.00,0:23.50,1.5,Chip: 1. Organise my tasks,2-graphics/chip_tasks.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:25.00,0:26.70,1.7,Chip: 2. Marketing ideas,2-graphics/chip_marketing.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:26.70,0:28.50,1.8,Chip: 3. Customer reply,2-graphics/chip_reply.png,"Pop in 5 frames, fade out 6 frames"
+4 Graphics (behind him),0:30.80,0:33.20,2.4,Large word: CLEARER DIRECTION,2-graphics/word_clearer.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+5 Graphics (in front),0:34.00,0:37.00,3.0,Chip: This week's plan,2-graphics/chip_plan_week.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:40.60,0:45.00,4.4,Chip: Brainstorm,2-graphics/chip_brainstorm.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:41.40,0:45.00,3.6,Chip: Research,2-graphics/chip_research.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:42.60,0:45.00,2.4,Chip: Write,2-graphics/chip_write.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:43.20,0:45.00,1.8,Chip: Plan,2-graphics/chip_plan.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:45.50,0:48.00,2.5,Chip: My edit,2-graphics/chip_my_edit.png,"Pop in 5 frames, fade out 6 frames"
+5 Graphics (in front),0:50.60,0:53.00,2.4,Lower third: Jire,2-graphics/lower_third.png,"Slide in from left 8 frames, out 8 frames"
+4 Graphics (behind him),0:53.00,0:55.00,2.0,Large word: SMARTER,2-graphics/word_smarter.png,"Fade+scale in 6 frames, 3% slow scale-up, fade out 6 frames"
+4 Graphics (behind him),0:58.00,1:00.00,2.0,End card,2-graphics/endcard.png,"Fade in 8 frames, hold"
+6 Captions,0:00.40,0:01.97,1.57,Running a business isn't,4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:02.00,0:02.37,0.37,easy.,4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:02.40,0:03.57,1.17,"Between customers, marketing,",4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:03.60,0:05.17,1.57,"emails and endless paperwork,",4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:05.20,0:06.77,1.57,sometimes it feels like,4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:06.80,0:08.37,1.57,there aren't enough hours,4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:08.40,0:09.57,1.17,in the day.,4-captions/captions.srt,Scene 1. Re-time to your real voice
+6 Captions,0:10.40,0:11.69,1.29,"Then one evening,",4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:11.72,0:13.45,1.73,while searching for a,4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:13.48,0:15.21,1.73,"smarter way to work,",4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:15.24,0:16.97,1.73,I discovered something interesting.,4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:17.00,0:18.73,1.73,An AI assistant called,4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:18.76,0:19.17,0.41,Claude.,4-captions/captions.srt,Scene 2. Re-time to your real voice
+6 Captions,0:20.40,0:22.01,1.61,I started by asking,4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:22.04,0:23.64,1.61,it to help me,4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:23.67,0:25.28,1.61,"organise my business tasks,",4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:25.31,0:26.92,1.61,develop marketing ideas and,4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:26.95,0:28.55,1.61,write better responses to,4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:28.58,0:29.37,0.79,my customers.,4-captions/captions.srt,Scene 3. Re-time to your real voice
+6 Captions,0:30.40,0:30.76,0.36,"Suddenly,",4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:30.79,0:32.31,1.52,I had a clearer,4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:32.34,0:32.70,0.36,direction.,4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:32.73,0:34.25,1.52,"My ideas were organised,",4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:34.28,0:35.80,1.52,my tasks were easier,4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:35.83,0:36.57,0.74,"to plan,",4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:36.60,0:38.12,1.52,and I could focus,4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:38.15,0:39.67,1.52,on growing my business.,4-captions/captions.srt,Scene 4. Re-time to your real voice
+6 Captions,0:40.40,0:41.97,1.57,"From brainstorming to research,",4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:42.00,0:43.17,1.17,"writing and planning,",4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:43.20,0:44.77,1.57,Claude became part of,4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:44.80,0:45.97,1.17,my daily workflow.,4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:46.00,0:47.57,1.57,And the best part?,4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:47.60,0:49.17,1.57,I was still in,4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:49.20,0:49.57,0.37,control.,4-captions/captions.srt,Scene 5. Re-time to your real voice
+6 Captions,0:50.30,0:50.66,0.36,"Sometimes,",4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:50.69,0:52.22,1.53,you don't need more,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:52.25,0:52.61,0.36,hands.,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:52.64,0:54.17,1.53,You need a smarter,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:54.20,0:55.35,1.14,way to work.,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:55.38,0:56.13,0.75,Discover Claude.,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:56.16,0:57.69,1.53,What would you create,4-captions/captions.srt,Scene 6. Re-time to your real voice
+6 Captions,0:57.72,0:58.47,0.75,with it?,4-captions/captions.srt,Scene 6. Re-time to your real voice
+7 Dialogue,0:00.40,0:09.60,9.2,"VO: Running a business isn't easy. Between customers, marketing, emails and endless paperwork, sometimes it feels like there aren't enough hours in the day.",(your recording) vo_scene1.wav,Peaks near -6 dB
+7 Dialogue,0:10.40,0:19.20,8.8,"VO: Then one evening, while searching for a smarter way to work, I discovered something interesting. An AI assistant called Claude.",(your recording) vo_scene2.wav,Peaks near -6 dB
+7 Dialogue,0:20.40,0:29.40,9.0,"VO: I started by asking it to help me organise my business tasks, develop marketing ideas and write better responses to my customers.",(your recording) vo_scene3.wav,Peaks near -6 dB
+7 Dialogue,0:30.40,0:39.70,9.3,"VO: Suddenly, I had a clearer direction. My ideas were organised, my tasks were easier to plan, and I could focus on growing my business.",(your recording) vo_scene4.wav,Peaks near -6 dB
+7 Dialogue,0:40.40,0:49.60,9.2,"VO: From brainstorming to research, writing and planning, Claude became part of my daily workflow. And the best part? I was still in control.",(your recording) vo_scene5.wav,Peaks near -6 dB
+7 Dialogue,0:50.30,0:58.50,8.2,"ON CAMERA: Sometimes, you don't need more hands. You need a smarter way to work. Discover Claude. What would you create with it?",(your recording) vo_scene6.wav,Peaks near -6 dB
+8 Sound effects,0:00.20,0:00.90,0.7,Paper slide,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:01.00,0:01.60,0.6,Phone buzz on wood,3-audio/sfx-only-60s.wav,"-16 dB, pan right"
+8 Sound effects,0:01.00,0:01.70,0.7,Paper slide,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:03.00,0:03.60,0.6,Phone buzz,3-audio/sfx-only-60s.wav,"-18 dB, pan right"
+8 Sound effects,0:05.20,0:05.40,0.2,Notification ping,3-audio/sfx-only-60s.wav,"-20 dB, pan left"
+8 Sound effects,0:05.40,0:06.20,0.8,Exhale,3-audio/sfx-only-60s.wav,"-24 dB, pan centre"
+8 Sound effects,0:05.80,0:06.00,0.2,Notification ping,3-audio/sfx-only-60s.wav,"-20 dB, pan right"
+8 Sound effects,0:06.30,0:06.50,0.2,Notification ping,3-audio/sfx-only-60s.wav,"-20 dB, pan left"
+8 Sound effects,0:06.80,0:07.00,0.2,Notification ping,3-audio/sfx-only-60s.wav,"-20 dB, pan right"
+8 Sound effects,0:08.20,0:08.70,0.5,Chair creak,3-audio/sfx-only-60s.wav,"-26 dB, pan centre"
+8 Sound effects,0:09.60,0:10.10,0.5,Whoosh into Scene 2,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+8 Sound effects,0:10.60,0:10.90,0.3,Trackpad scroll,3-audio/sfx-only-60s.wav,"-24 dB, pan centre"
+8 Sound effects,0:11.30,0:11.60,0.3,Trackpad scroll,3-audio/sfx-only-60s.wav,"-24 dB, pan centre"
+8 Sound effects,0:12.20,0:12.60,0.4,Chair creak on lean,3-audio/sfx-only-60s.wav,"-26 dB, pan centre"
+8 Sound effects,0:13.20,0:15.20,2.0,Keyboard typing,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+8 Sound effects,0:15.80,0:16.20,0.4,Rising whoosh into flash,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+8 Sound effects,0:16.10,0:16.60,0.5,Confirmation tone,3-audio/sfx-only-60s.wav,"-16 dB, pan centre"
+8 Sound effects,0:18.30,0:18.40,0.1,Mouse click,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:20.00,0:21.80,1.8,Fast typing,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+8 Sound effects,0:21.90,0:22.00,0.1,Send click,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+8 Sound effects,0:22.20,0:23.40,1.2,Text appearing,3-audio/sfx-only-60s.wav,"-26 dB, pan centre"
+8 Sound effects,0:25.00,0:25.30,0.3,Card in,3-audio/sfx-only-60s.wav,"-22 dB, pan right"
+8 Sound effects,0:26.70,0:27.00,0.3,Card swap,3-audio/sfx-only-60s.wav,"-22 dB, pan centre"
+8 Sound effects,0:28.50,0:28.80,0.3,Card out,3-audio/sfx-only-60s.wav,"-24 dB, pan left"
+8 Sound effects,0:30.00,0:31.00,1.0,Airy whoosh over time change,3-audio/sfx-only-60s.wav,"-22 dB, pan centre"
+8 Sound effects,0:31.60,0:33.00,1.4,Pen writing,3-audio/sfx-only-60s.wav,"-20 dB, pan right"
+8 Sound effects,0:33.20,0:33.40,0.2,Pen tick,3-audio/sfx-only-60s.wav,"-20 dB, pan right"
+8 Sound effects,0:34.00,0:36.50,2.5,Mouse-wheel scroll,3-audio/sfx-only-60s.wav,"-26 dB, pan centre"
+8 Sound effects,0:37.30,0:37.50,0.2,Pen set down,3-audio/sfx-only-60s.wav,"-22 dB, pan right"
+8 Sound effects,0:38.20,0:38.70,0.5,Chair creak,3-audio/sfx-only-60s.wav,"-26 dB, pan centre"
+8 Sound effects,0:40.00,0:42.00,2.0,Confident typing,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:40.60,0:40.75,0.15,Chip pop,3-audio/sfx-only-60s.wav,"-24 dB, pan right"
+8 Sound effects,0:41.40,0:41.55,0.15,Chip pop,3-audio/sfx-only-60s.wav,"-24 dB, pan right"
+8 Sound effects,0:42.60,0:42.75,0.15,Chip pop,3-audio/sfx-only-60s.wav,"-24 dB, pan right"
+8 Sound effects,0:43.20,0:43.35,0.15,Chip pop,3-audio/sfx-only-60s.wav,"-24 dB, pan right"
+8 Sound effects,0:44.00,0:45.20,1.2,Typing burst,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:45.40,0:45.70,0.3,Swish into R6,3-audio/sfx-only-60s.wav,"-22 dB, pan centre"
+8 Sound effects,0:46.00,0:47.60,1.6,Light typing (his edit),3-audio/sfx-only-60s.wav,"-22 dB, pan centre"
+8 Sound effects,0:48.00,0:48.40,0.4,Soft impact as he looks up,3-audio/sfx-only-60s.wav,"-20 dB, pan centre"
+8 Sound effects,0:53.00,0:53.40,0.4,Soft whoosh as SMARTER lands,3-audio/sfx-only-60s.wav,"-24 dB, pan centre"
+8 Sound effects,0:55.60,0:56.10,0.5,Soft impact under 'Claude',3-audio/sfx-only-60s.wav,"-22 dB, pan centre"
+8 Sound effects,0:58.60,0:59.20,0.6,Confirmation tone,3-audio/sfx-only-60s.wav,"-18 dB, pan centre"
+9 Ambience,0:00.00,0:10.25,10.25,"Office room tone, faint traffic",3-audio/ambience-only-60s.wav,"-32 dB, 0.5-1 s crossfades"
+9 Ambience,0:09.75,0:30.50,20.75,"Night room tone, faint air-conditioning",3-audio/ambience-only-60s.wav,"-34 dB, 0.5-1 s crossfades"
+9 Ambience,0:29.50,1:00.00,30.5,"Morning room tone, faint birds and traffic (fades out 59.2-60)",3-audio/ambience-only-60s.wav,"-32 dB, 0.5-1 s crossfades"
+10 Music,0:00.00,1:00.00,60,None,,No background music anywhere
