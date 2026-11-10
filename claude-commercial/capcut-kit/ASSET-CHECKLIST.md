@@ -48,7 +48,7 @@ Status: PROVIDED = in this kit. YOU = you make it. CAPCUT = made inside CapCut d
 | Voice, Scene 4 line | 0:30.4-0:39.7 | YOU, record |
 | Voice, Scene 5 line | 0:40.4-0:49.6 | YOU, record |
 | Voice, Scene 6 line (on camera) | 0:50.3-0:58.5 | YOU, record |
-| Sound effects, 44 cues | 0:00-1:00 | PROVIDED: 3-audio/sfx-only-60s.wav |
+| Sound effects, 42 cues | 0:00-1:00 | PROVIDED: 3-audio/sfx-only-60s.wav |
 | Room tone: dusk, night, morning | 0:00-1:00 | PROVIDED: 3-audio/ambience-only-60s.wav |
 | Effects and room tone mixed | 0:00-1:00 | PROVIDED: 3-audio/sfx-and-ambience-60s.wav |
 | Music | | None |
