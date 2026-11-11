@@ -4,6 +4,8 @@ import '@fontsource/montserrat/900.css';
 import React, {useEffect, useState} from 'react';
 import {AbsoluteFill, Audio, continueRender, delayRender, Img, interpolate, OffthreadVideo, Sequence, staticFile, useCurrentFrame} from 'remotion';
 import {prog} from '../anim';
+import vo from './vo.json';
+const C = vo.cues;
 
 /* "The Businessman Who Discovered Claude" — 60 s.
    Scene 1 is the approved Flow clip. Scenes 2-5 are motion graphics with a neutral, illustrative
@@ -83,10 +85,10 @@ const S1: React.FC = () => {
   return (
     <AbsoluteFill style={{background: '#000'}}>
       <OffthreadVideo src={staticFile('ad/s1.mp4')} muted playbackRate={0.9767} style={vid} />
-      <Big lines={['CUSTOMERS']} a={2.9} b={3.75} top={150} />
-      <Big lines={['MARKETING']} a={3.8} b={4.55} top={150} />
-      <Big lines={['EMAILS']} a={4.6} b={5.35} top={150} />
-      <Big lines={['PAPERWORK']} a={5.4} b={7.4} top={150} />
+      <Big lines={['CUSTOMERS']} a={C.customers} b={C.marketing - 0.08} top={150} />
+      <Big lines={['MARKETING']} a={C.marketing} b={C.emails - 0.08} top={150} />
+      <Big lines={['EMAILS']} a={C.emails} b={C.paperwork - 0.08} top={150} />
+      <Big lines={['PAPERWORK']} a={C.paperwork} b={C.paperwork + 1.5} top={150} />
       <OffthreadVideo src={staticFile('ad/s1_cut.webm')} muted transparent playbackRate={0.9767} style={{...vid, position: 'absolute', inset: 0}} />
       {bubbles.map(([txt, x, y, a]) => {
         const p = P(f, a, 0.18), o = 1 - P(f, 7.8, 0.25);
@@ -134,7 +136,7 @@ const S2: React.FC = () => {
         <Day>
           <div style={{position: 'absolute', top: 430, left: 0, right: 0, textAlign: 'center', opacity: P(f, 6.15, 0.4), filter: `blur(${(1 - P(f, 6.15, 0.4)) * 16}px)`}}>
             <div style={{fontFamily: M, fontWeight: 300, fontSize: 60, color: '#59607A'}}>An AI assistant called</div>
-            <div style={{fontFamily: M, fontWeight: 900, fontSize: 250, color: NAVY, letterSpacing: -10, lineHeight: 1.05}}>Claude</div>
+            <div style={{fontFamily: M, fontWeight: 900, fontSize: 250, color: NAVY, letterSpacing: -10, lineHeight: 1.05, opacity: P(f, C.claude2 - 10.15, 0.3), transform: `scale(${1.15 - 0.15 * P(f, C.claude2 - 10.15, 0.3)})`}}>Claude</div>
           </div>
           <div style={{position: 'absolute', left: 90, right: 90, top: 1040, height: 250, borderRadius: 44, background: '#fff', boxShadow: '0 30px 70px -24px rgba(10,36,99,.35)', padding: '40px 44px', opacity: P(f, 7.0, 0.4), transform: `translateY(${(1 - P(f, 7.0, 0.4)) * 50}px)`}}>
             <div style={{fontFamily: UI, fontSize: 48, color: '#8A90A6'}}>How can I help you today?<span style={{color: BLUE, opacity: Math.floor(f / 15) % 2 ? 1 : 0}}> |</span></div>
@@ -193,7 +195,7 @@ const S4: React.FC = () => {
   const cardP = P(f, 2.6, 0.4);
   return (
     <Day>
-      <Big lines={['CLEARER', 'DIRECTION']} a={0.5} b={2.5} color={NAVY} top={520} />
+      <Big lines={['CLEARER', 'DIRECTION']} a={C.clearer - 30.2} b={2.6} color={NAVY} top={520} />
       <div style={{position: 'absolute', left: 70, right: 70, top: 380, background: '#fff', borderRadius: 48, padding: '50px 48px', boxShadow: '0 40px 90px -30px rgba(10,36,99,.4)', opacity: cardP, transform: `translateY(${(1 - cardP) * 80}px)`}}>
         <div style={{fontFamily: M, fontWeight: 900, fontSize: 70, color: INK, letterSpacing: -2}}>This week’s plan</div>
         <div style={{marginTop: 26, height: 22, borderRadius: 11, background: '#E9EEFA', overflow: 'hidden'}}>
@@ -221,8 +223,8 @@ const S5: React.FC = () => {
   const f = useCurrentFrame(); const t = useT();
   const words = [['Brainstorm', 0.6], ['Research', 1.4], ['Write', 2.6], ['Plan', 3.2]] as const;
   const draft = t >= 5.2;
-  const strike = P(f, 6.0, 0.4); const mine = 'Your order ships tomorrow morning.';
-  const btn = {x: 760, y: 880}; const cp = P(f, 7.6, 0.5); const sent = t >= 8.2;
+  const strike = P(f, 5.8, 0.4); const mine = 'Your order ships tomorrow morning.';
+  const btn = {x: 760, y: 880}; const K5 = C.control - 40.1; const cp = P(f, K5 - 0.6, 0.5); const sent = t >= K5;
   return (
     <Day>
       {!draft && words.map(([w, a], i) => <Chip key={w} text={w} a={a} b={4.9} x={i % 2 ? 560 : 110} y={640 + Math.floor(i / 2) * 190} big />)}
@@ -233,16 +235,16 @@ const S5: React.FC = () => {
           <div style={{position: 'absolute', left: 70, right: 70, top: 470, background: '#fff', borderRadius: 48, padding: '50px 48px 150px', boxShadow: '0 40px 90px -30px rgba(10,36,99,.4)', fontFamily: UI, fontSize: 48, lineHeight: 1.4, color: INK, opacity: P(f, 5.2, 0.3), transform: `translateY(${(1 - P(f, 5.2, 0.3)) * 60}px)`}}>
             <div style={{fontFamily: M, fontWeight: 500, fontSize: 30, color: '#8A90A6', letterSpacing: 3, marginBottom: 22}}>REPLY TO CUSTOMER</div>
             Good afternoon, and thank you for your patience. I am sorry your order is late.{' '}
-            <span style={{position: 'relative', color: strike > 0.5 ? '#A9AFBF' : INK, background: `rgba(240,26,16,${0.12 * Math.min(1, P(f, 5.7, 0.2))})`}}>
+            <span style={{position: 'relative', color: strike > 0.5 ? '#A9AFBF' : INK, background: `rgba(240,26,16,${0.12 * Math.min(1, P(f, 5.5, 0.2))})`}}>
               It will reach you by Friday.
               <span style={{position: 'absolute', left: 0, top: '52%', height: 5, width: `${strike * 100}%`, background: RED}} />
             </span>{' '}
-            <span style={{color: BLUE, fontWeight: 600}}>{typed(mine, t, 6.5, 7.6)}{t > 6.4 && t < 7.7 && <span>|</span>}</span>
-            <div style={{position: 'absolute', right: 44, bottom: 40, background: sent ? '#fff' : NAVY, color: sent ? NAVY : '#fff', border: `5px solid ${NAVY}`, borderRadius: 999, padding: '20px 54px', fontFamily: M, fontWeight: 900, fontSize: 46, transform: `scale(${t > 8.2 && t < 8.4 ? 0.92 : 1})`}}>{sent ? 'Sent by me' : 'Send'}</div>
+            <span style={{color: BLUE, fontWeight: 600}}>{typed(mine, t, 6.2, 7.0)}{t > 6.1 && t < 7.1 && <span>|</span>}</span>
+            <div style={{position: 'absolute', right: 44, bottom: 40, background: sent ? '#fff' : NAVY, color: sent ? NAVY : '#fff', border: `5px solid ${NAVY}`, borderRadius: 999, padding: '20px 54px', fontFamily: M, fontWeight: 900, fontSize: 46, transform: `scale(${t > K5 && t < K5 + 0.2 ? 0.92 : 1})`}}>{sent ? 'Sent by me' : 'Send'}</div>
           </div>
-          {t > 7.6 && <Cursor x={900 - (900 - btn.x) * cp} y={1700 - (1700 - btn.y) * cp} press={t > 8.2 && t < 8.4} />}
-          <Ring at={8.2} x={btn.x + 20} y={btn.y + 10} />
-          <Big lines={['STILL IN', 'CONTROL']} a={8.4} b={9.9} color={NAVY} top={1230} size={120} />
+          {t > K5 - 0.6 && <Cursor x={900 - (900 - btn.x) * cp} y={1700 - (1700 - btn.y) * cp} press={t > K5 && t < K5 + 0.2} />}
+          <Ring at={K5} x={btn.x + 20} y={btn.y + 10} />
+          <Big lines={['STILL IN', 'CONTROL']} a={K5 + 0.1} b={9.9} color={NAVY} top={1230} size={120} />
         </>
       )}
     </Day>
@@ -254,34 +256,34 @@ const S6: React.FC = () => {
   const f = useCurrentFrame(); const t = useT();
   const push = 1.02 + 0.07 * (f / F(10));
   const st: React.CSSProperties = {position: 'absolute', inset: 0, width: '100%', height: '100%', objectFit: 'cover', transform: `scale(${push})`, transformOrigin: '50% 38%'};
-  const end = P(f, 8, 0.4);
+  const N = C.s6need - 50, SM = C.s6smarter - 50, D = C.s6discover - 50, E = C.s6what - 50; const end = P(f, E, 0.4);
   return (
     <AbsoluteFill style={{background: '#000'}}>
       <Img src={staticFile('ad/portrait.png')} style={st} />
       <AbsoluteFill style={{background: 'linear-gradient(180deg, rgba(5,11,30,.55) 0%, rgba(5,11,30,0) 38%, rgba(5,11,30,0) 62%, rgba(5,11,30,.75) 100%)'}} />
-      {t < 8 && (
+      {t < E && (
         <>
-          <div style={{position: 'absolute', top: 150, left: 40, right: 40, textAlign: 'center', fontFamily: M, fontWeight: 300, fontSize: 64, color: '#fff', lineHeight: 1.2, opacity: P(f, 0.4) * (1 - P(f, 2.9, 0.25)), textShadow: '0 2px 18px rgba(0,0,0,.6)'}}>Sometimes, you don’t need<br /><span style={{fontWeight: 900}}>more hands.</span></div>
-          <div style={{position: 'absolute', top: 120, left: 0, right: 0, textAlign: 'center', fontFamily: M, fontWeight: 300, fontSize: 58, color: '#fff', opacity: P(f, 3.0) * (1 - P(f, 5.7, 0.25)), textShadow: '0 2px 18px rgba(0,0,0,.6)'}}>You need a</div>
-          <Big lines={['SMARTER', 'WAY']} a={3.2} b={5.7} top={200} size={150} />
+          <div style={{position: 'absolute', top: 150, left: 40, right: 40, textAlign: 'center', fontFamily: M, fontWeight: 300, fontSize: 64, color: '#fff', lineHeight: 1.2, opacity: P(f, 0.4) * (1 - P(f, N - 0.1, 0.2)), textShadow: '0 2px 18px rgba(0,0,0,.6)'}}>Sometimes, you don’t need<br /><span style={{fontWeight: 900}}>more hands.</span></div>
+          <div style={{position: 'absolute', top: 120, left: 0, right: 0, textAlign: 'center', fontFamily: M, fontWeight: 300, fontSize: 58, color: '#fff', opacity: P(f, N) * (1 - P(f, D - 0.1, 0.2)), textShadow: '0 2px 18px rgba(0,0,0,.6)'}}>You need a</div>
+          <Big lines={['SMARTER', 'WAY']} a={SM} b={D - 0.1} top={200} size={150} />
         </>
       )}
-      {t >= 8 && (
+      {t >= E && (
         <div style={{position: 'absolute', top: 170, left: 50, right: 50, textAlign: 'center', fontFamily: M, fontWeight: 300, fontSize: 88, lineHeight: 1.1, color: '#fff', opacity: end, filter: `blur(${(1 - end) * 12}px)`, textShadow: '0 2px 20px rgba(0,0,0,.6)'}}>What would you<br />create with it?</div>
       )}
       <Img src={staticFile('ad/portrait_cut.png')} style={st} />
-      {t >= 5.9 && t < 8 && (
-        <div style={{position: 'absolute', top: 1330, left: 0, right: 0, textAlign: 'center', opacity: P(f, 5.9) * (1 - P(f, 7.8, 0.2))}}>
+      {t >= D && t < E && (
+        <div style={{position: 'absolute', top: 1330, left: 0, right: 0, textAlign: 'center', opacity: P(f, D, 0.2) * (1 - P(f, E - 0.15, 0.15))}}>
           <span style={{fontFamily: M, fontWeight: 300, fontSize: 60, color: '#fff'}}>Discover </span>
           <span style={{fontFamily: M, fontWeight: 900, fontSize: 96, color: '#fff'}}>Claude.</span>
         </div>
       )}
-      {t >= 8 && (
+      {t >= E && (
         <>
-          <div style={{position: 'absolute', top: 1440, left: 0, right: 0, textAlign: 'center', opacity: P(f, 8.3)}}>
+          <div style={{position: 'absolute', top: 1440, left: 0, right: 0, textAlign: 'center', opacity: P(f, E + 0.9)}}>
             <span style={{fontFamily: M, fontWeight: 900, fontSize: 92, color: NAVY, background: '#fff', padding: '14px 46px 18px', borderRadius: 999}}>@jire_ai</span>
           </div>
-          <div style={{position: 'absolute', top: 1640, left: 0, right: 0, textAlign: 'center', fontFamily: M, fontWeight: 500, fontSize: 30, color: 'rgba(255,255,255,.85)', opacity: P(f, 8.6)}}>Independent creator video · Made with AI</div>
+          <div style={{position: 'absolute', top: 1640, left: 0, right: 0, textAlign: 'center', fontFamily: M, fontWeight: 500, fontSize: 30, color: 'rgba(255,255,255,.85)', opacity: P(f, E + 1.4)}}>Independent creator video · Made with AI</div>
         </>
       )}
       <AbsoluteFill style={{background: '#000', opacity: P(f, 9.8, 0.2)}} />
@@ -297,13 +299,8 @@ const LINES: [number, number, string][] = [
   [30.4, 39.7, 'Suddenly, I had a clearer direction. My ideas were organised, my tasks were easier to plan, and I could focus on growing my business.'],
   [40.4, 49.6, 'From brainstorming to research, writing and planning, Claude became part of my daily workflow. And the best part? I was still in control.'],
 ];
-const CAPS = LINES.flatMap(([a, b, text]) => {
-  const words = text.split(' '); const groups: string[][] = []; let cur: string[] = [];
-  words.forEach((w) => { cur.push(w); if (cur.length >= 4 || /[.?!,]$/.test(w)) { groups.push(cur); cur = []; } });
-  if (cur.length) groups.push(cur);
-  let t = a;
-  return groups.map((g) => { const d = ((b - a) * g.length) / words.length; const c = {s: t, e: t + d, text: g.join(' ')}; t += d; return c; });
-});
+const CAPS = vo.caps.filter((c) => c.line < 5).map((c) => ({s: c.s - 0.05, e: c.e + 0.18, text: c.text}));
+void LINES;
 const Captions: React.FC = () => {
   const f = useCurrentFrame(); const t = f / FPS;
   const c = CAPS.find((x) => t >= x.s && t < x.e);
@@ -331,7 +328,8 @@ export const ClaudeAd: React.FC = () => {
       <Flash at={10} />
       <Flash at={30} />
       <Flash at={50} />
-      <Audio src={staticFile('ad/sound.wav')} />
+      <Audio src={staticFile('ad/sound.wav')} volume={0.9} />
+      <Audio src={staticFile('ad/vo.wav')} />
     </AbsoluteFill>
   );
 };
