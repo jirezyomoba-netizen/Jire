@@ -5,3 +5,4 @@ public/soundtrack-*.wav
 public/clips/*
 !public/clips/.gitkeep
 public/talk/
+public/ad/

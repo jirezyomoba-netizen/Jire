@@ -1,7 +1,7 @@
 // Sound effects and room tone for the 60 s edit, synthesised from spec.json. No music.
 // Writes three 60 s stereo WAVs: sfx-only, ambience-only, and both mixed.
 import {readFileSync, writeFileSync} from 'node:fs';
-const spec = JSON.parse(readFileSync('spec.json', 'utf8'));
+const spec = JSON.parse(readFileSync(process.env.SPEC || 'spec.json', 'utf8'));
 const SR = 48000, LEN = 60, N = SR * LEN, TAU = Math.PI * 2;
 let seed = 3;
 const rnd = () => ((seed = (seed * 16807) % 2147483647) / 2147483647) * 2 - 1;
@@ -74,6 +74,6 @@ const write = (path, bufs) => {
   for (let i = 0; i < N; i++) for (let c = 0; c < 2; c++) { let v = 0; for (const b of bufs) v += b[c][i]; out.writeInt16LE(Math.round(Math.max(-1, Math.min(1, v)) * 32767), 44 + i * 4 + c * 2); }
   writeFileSync(path, out);
 };
-const K = '../capcut-kit/3-audio/';
+const K = process.env.OUT || '../capcut-kit/3-audio/';
 write(K + 'sfx-only-60s.wav', [sfx]); write(K + 'ambience-only-60s.wav', [amb]); write(K + 'sfx-and-ambience-60s.wav', [sfx, amb]);
 console.log('audio written');
